@@ -1,51 +1,74 @@
-Good Morning Team,
+Good Morning YOKO and Team,
 
-This project is created by using the Laravel Framework.
+This project is created by using the CORE PHP.
 
 So Before running the project make sure you are installed the below softwares on your system:
 
-1. Node js(https://nodejs.org/en/download/)
-2. Composer(https://getcomposer.org/download/) install the exe file and run the composer install in your project path from cmd
-3. Any Code Editor(https://code.visualstudio.com/download) - If you need
-4. WAMP server or XAMPP server(https://www.wampserver.com/en/ or https://www.apachefriends.org/) - For Database
-5. Put the downloaded github code inside the c:/wamp/www/(or your wamp installed path) folder or xampp (installed path / htdocs)
-6. Add the .env file to your root folder. Download it from the below link.
-   https://file.io/tBttryFNM2eW
+1. WAMP OR XAMPP SERVER
 
-7. open the commandprompt and go to the location where you placed the project by using cd command. Ex: C:wamp\www\projectname
-8. turn on the wamp server and go to the browser and enter the localhost/phpmyadmin then create a new database with the name of todo_list.
-9. run the project by using the following command
-   1. php artisan optimize
-   2. php artisan migrate
-   3. php artisan serve(After run this command you will get 127.0.0.1 like this type of address in your command prompt. copy and paste this address in your browser)
-10. Create a new registration by using your details by clicking create account link from login page.
-11.Login inside and create your todo list.
-12.Todo list is based on the user. This todo list is created with multi user access. For example: If you are login then it shows only your todo list and if your friend login then it shows only your friend todo list.
+CONFIGURATION
+=============
+
+1. UNZIP THE PROJECT FILE AND COPY THE PROJECT FOLDER AND PASTE IT ON THE ROOT FOLDER EX:WAMP/WWW/ --> PASTE HERE
+2. CREATE A NEW DATABASE WITH THE NAME OF test_market in PHPMYADMIN
+3. FIND THE .SQL FILE FROM THE PROJECT DIRECTORY AND IMPORT IT ON THE test_market DATABASE
+4. CHANGE YOUR USERNAME , PASSWORD, DATABASE NAME, BASEURL IN THE dbconfig.php file
+5. NOW TURN ON THE WAMP SERVER IN YOUR PC AND RUN THE PROJECT EX: LOCALHOST/STOCK
+6. CREATE A NEW ACCOUNT BY USING SIGNUP LINK
+7. LOGIN YOURSELF WITH THE USERNAME AND PASSWORD
+8. FOR NOW THE ROLE WILL BE AUTOMATICALLY ALLOCATED WHILE CREATING THE ACCOUNT
+9. MAY BE IN FUTURE IF WE NEED ROLE ALLOCATION THEN WE WILL ADD.
+10.IF LOGIN IS SUCCESS THEN THE PAGE WILL REDIRECT YOU TO THE DASHBOARD PAGE(STOCK LIST).
+11.GO TO THE UPLOAD STOCK PAGE AND UPLOAD YOUR CSV FILE
+12. ONCE UPLOADED THE STOCK LIST WILL START VISIBLE ON THE DASHBOARD PAGE
+13  CHECK THE MEAN STOCK AND STANDARD DEVIATION PAGES
+14. BUY AND SELL STOCKS BY USING THE BUY AND SELL BUTTON
+15. ONLY ONE PURCHASE IS ALLOWED PER DAY EITHER BUY OR SELL
+16. THE BUY AND SELL STOCK SHOW YOU THE BALANCE STOCK AND BALANCE MONEY YOU HAVE IN YOUR ACCOUNT
+17. IF YOU ARE NOT ABLE TO BUY BECAUSE OF LOW BALANCE THEN GO TO THE TOP RIGHT AND CLICK THE PROFILE ICON AND CLICK MY PROFILE 
+18. IN MY PROFILE YOU ARE ABLE TO SEE YOUR ACCOUNT DETAILS, YOUR PURCHASE HISTORY, YOUR SELL HISTORY, YOUR PROFIT AND WALLET.
+19. IN WALLET YOU CAN ADD AMOUNT AND AFTER ADDING THE AMOUNT YOU CAN START PURCHASE THE STOCKS.
+20. IN THE DASHBOARD USING THE FILTERS TO GET THE BEST DATE OF BUY AND SELL STOCKS TO MINIMIZE YOUR LOSS OR MAXIMIZE YOUR PROFIT
+21. FIND THE RESET_CRON.PHP FILE IN DIRECTORY AND PLACE IT ON YOUR WAMP. PLEASE CHECK THE FOLLOWING LINK: https://magento.stackexchange.com/questions/222766/how-can-i-setup-cron-job-in-wamp-windows
+22. THIS CRON WILL HELP YOU TO RESET THE TODAY PURCHASE. SO THAT YOU ARE ABLE TO BUY OR SELL THE STOCK ON NEXT DAY.
 
 
 
 ==================================================================OR============================================================
-1. DOWNLOAD THE PROJECT FROM GITHUB
-2. HOST THE PROJECT ON THE LIVE SERVER.
-3. ADD THE .htaccess in your root folder and place the following code on this file or Download the .htaccess file from the below link and paste it on your root folder. EXAMPLE: public_html/todolist/ pastehere
-   https://file.io/V8g9s4qJPbI2
-4. Add the .env file to your root folder. Download it from the below link. EXAMPLE: public_html/todolist/ pastehere
-   https://file.io/tBttryFNM2eW
 
-5. CREATE A DATA BASE IN THE LIVE SERVER named todo_list.
-6. IMPORT THE ATTACHED DATABASE FILE IN YOUR DATABASE (MYSQL(PHP MY ADMIN)).
-7. GO TO YOUR WEB ADDRESS.
-8. CREATE REGISTRATION AND CREATE YOUR TODO LIST.
-9. MAKE SURE YOU ARE DELETED THE CACHE FILE FROM THE PATH rootfolder/bootstrap/cache/config.php -> delete this config.php file to run without any cache or config problem
+IF YOU ARE USING LIVE SERVER
+
+1. UNZIP THE PROJECT FILE AND COPY THE PROJECT FOLDER AND PASTE IT ON THE ROOT FOLDER 
+2. CREATE A NEW DATABASE WITH THE NAME OF test_market in PHPMYADMIN
+3. FIND THE .SQL FILE FROM THE PROJECT DIRECTORY AND IMPORT IT ON THE test_market DATABASE
+4. CHANGE YOUR USERNAME , PASSWORD, DATABASE NAME, BASEURL IN THE dbconfig.php file
+5. NOW RUN THE PROJECT IN THE BROWSER 
+6. CREATE A NEW ACCOUNT BY USING SIGNUP LINK
+7. LOGIN YOURSELF WITH THE USERNAME AND PASSWORD
+8. FOR NOW THE ROLE WILL BE AUTOMATICALLY ALLOCATED WHILE CREATING THE ACCOUNT
+9. MAY BE IN FUTURE IF WE NEED ROLE ALLOCATION THEN WE WILL ADD.
+10.IF LOGIN IS SUCCESS THEN THE PAGE WILL REDIRECT YOU TO THE DASHBOARD PAGE(STOCK LIST).
+11.GO TO THE UPLOAD STOCK PAGE AND UPLOAD YOUR CSV FILE
+12. ONCE UPLOADED THE STOCK LIST WILL START VISIBLE ON THE DASHBOARD PAGE
+13  CHECK THE MEAN STOCK AND STANDARD DEVIATION PAGES
+14. BUY AND SELL STOCKS BY USING THE BUY AND SELL BUTTON
+15. ONLY ONE PURCHASE IS ALLOWED PER DAY EITHER BUY OR SELL
+16. THE BUY AND SELL STOCK SHOW YOU THE BALANCE STOCK AND BALANCE MONEY YOU HAVE IN YOUR ACCOUNT
+17. IF YOU ARE NOT ABLE TO BUY BECAUSE OF LOW BALANCE THEN GO TO THE TOP RIGHT AND CLICK THE PROFILE ICON AND CLICK MY PROFILE 
+18. IN MY PROFILE YOU ARE ABLE TO SEE YOUR ACCOUNT DETAILS, YOUR PURCHASE HISTORY, YOUR SELL HISTORY, YOUR PROFIT AND WALLET.
+19. IN WALLET YOU CAN ADD AMOUNT AND AFTER ADDING THE AMOUNT YOU CAN START PURCHASE THE STOCKS.
+20. IN THE DASHBOARD USING THE FILTERS TO GET THE BEST DATE OF BUY AND SELL STOCKS TO MINIMIZE YOUR LOSS OR MAXIMIZE YOUR PROFIT
+21. FIND THE RESET_CRON.PHP FILE IN DIRECTORY AND PLACE IT ON YOUR CRON JOB. 
+22. THIS CRON WILL HELP YOU TO RESET THE TODAY PURCHASE. SO THAT YOU ARE ABLE TO BUY OR SELL THE STOCK ON NEXT DAY. 
 
 
-Please let me know if you are getting any trouble OR IF YOU NEED ANY HELP.
+PLEASE LET ME KNOW IF YOU ARE HAVING ANY TROUBLE WHILE RUNNING THE PROJECT
 
 
-PLEASE REMOVE THE DATABASE FILE(todo_list.sql) FROM YOUR PROJECT ONCE YOU FINISHED THE IMPORT.
+HAVE A NICE DAY
 
+THANK YOU
 
-THANK YOU. HAVE A NICE DAY.
 
 
 
