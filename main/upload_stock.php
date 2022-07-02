@@ -334,6 +334,7 @@ else
                             });
 							spinner.hide();
 							$("#uploadform")[0].reset();
+                            location.reload();
 						}
 						else
 						{
@@ -345,6 +346,7 @@ else
                                 icon: 'error'
                             });
 							spinner.hide();
+                            location.reload();
 						}
 					}
 				});

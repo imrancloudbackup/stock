@@ -24,6 +24,7 @@ else
 			{
 				$userrow = $checkuserstmt->fetch();
 				$username = $userrow['user_name'];
+				$userid = $userrow['id'];
 
 			}
 			else
@@ -219,7 +220,7 @@ else
 										</div>
 									</div>
 								</div>
-
+								<input type="hidden" id="filteruserid" name="filteruserid" value="<?php echo $userid; ?>" />
 								<div class="col-md-2 pull-left">
 									<button type="submit" class="btn btn-primary"><i class="feather icon-search"></i> Search</button>
 									<button type="button" class="btn btn-danger" onclick="clearfilter();"><i class="feather icon-delete"></i> Clear</button>
@@ -554,7 +555,6 @@ else
 
 		function viewstocks(sno)
 		{
-			
 			if(sno == 1)
 			{
 				$('#stocktable').addClass('loading');
@@ -570,7 +570,6 @@ else
 					var status = response.status;
 					var resp = response.record;
 					var serialno = response.totalserialno;
-					
 					if(status == 1)
 					{
 
@@ -581,6 +580,7 @@ else
 					}
 					else
 					{
+						$('#dynamicitemtable').append(resp);
 						$('#stocktable').removeClass('loading');
 					}
 				}
